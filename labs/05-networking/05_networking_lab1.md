@@ -117,7 +117,7 @@ The output should look like the following:
     The container is automatically assigned eth0 and assigned an IP Address. This is the default behavior of docker. By default, docker will assign containers to the default bridge network.
 
 5.	Run following command and statically assign a dns server to the containers /etc/resolv.conf  
-`docker run --rm --dns 8.8.8.8 alpine:latest nslookup google.com`  
+`docker run --rm --dns 8.8.8.8 aslaen/nslookup nslookup google.com`  
 The output should look like the following:
     ```
     Server:    8.8.8.8
@@ -131,7 +131,7 @@ The output should look like the following:
 ### 3. DNS Search and Host Record
 Step by Step Guide
 1.	Run following command and assign a DNS search suffix to the container.  
-`docker run --rm --dns 8.8.8.8 --dns-search docker.com alpine:latest nslookup docs`  
+`docker run --rm --dns 8.8.8.8 --dns-search docker.com aslaen/nslookup nslookup docs`  
 The output should look like the following:
     ```
     Server:    8.8.8.8
@@ -150,7 +150,7 @@ The output should look like the following:
     Adding a dns-server suffix to container allows the container to append the search suffix to the containers DNS name resolution. In the above example, searching for docs, resulting in entire DNS lookup being docs.docker.com (similar to most Linux systems).
 
 2.	Run following command and add a host entry to the container /etc/hosts file.  
-`docker run --rm --add-host devdb:127.0.0.1 alpine:latest nslookup devdb`  
+`docker run --rm --add-host devdb:127.0.0.1 aslaen/nslookup nslookup devdb`  
 The output should look like the following:
     ```
     PING devdb (127.0.0.1): 56 data bytes
