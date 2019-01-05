@@ -112,7 +112,7 @@ The output will look like this:
 16.	Run a diff on the container made from the wordpress-cli:aio-manual image. Note the different A (Adds), C (Changes), and D (Deletes). Which changes did you make in the previous manual build lab? Which changes appear to be made by WordPress running?   
 `docker diff <container ID>`
 
-17.	Finally, use docker rm command to remove the containers from this lab and clean up the environment. For more information, enter  
+17.	Finally, use `docker rm` command to remove the containers from this lab and clean up the environment. For more information, enter  
 `docker --help`
 
 ### Lab Complete!
