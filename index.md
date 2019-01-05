@@ -6,12 +6,6 @@
 ## lab VMs
 [VM Sheet](http://bit.ly/docker-fun-labs)
 
-## SSH 
-The servers are set to authenticate using SSH key which can be found in the `keys` directory. 
-
-Mac or Linux: Download `lab.pem`  
-Windows: Download `lab.ppk`
-
 To access the lab servers please follow the [Setup Guide](labs/setup-env/)
 
 
