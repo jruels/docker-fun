@@ -320,7 +320,7 @@ Type "exit" to leave container
 
 ### 6. Open Container Network
 Step by Step Guide
-1.	Run the following command and deploy a container using the --net host  
+1.	Run the following command and deploy a container using the `--net host`  
 `docker run --rm --net host alpine:latest ip addr`  
     The output should look like the following:
     ```
@@ -355,7 +355,7 @@ Step by Step Guide
         inet6 fe80::94f7:a0ff:fe7c:5595/64 scope link 
         valid_lft forever preferred_lft forever
     ```
-    Using the --net host method gives the container access to the docker host’s network interfaces and should be used only as a last resort. Although the container does have access to the host’s network interfaces, it does not have access to the host’s resources outside of its namespace (cpu, ram, storage, etc).
+    Using the `--net host` method gives the container access to the docker host’s network interfaces and should be used only as a last resort. Although the container does have access to the host’s network interfaces, it does not have access to the host’s resources outside of its namespace (cpu, ram, storage, etc).
 
 ### Lab Complete!
 
