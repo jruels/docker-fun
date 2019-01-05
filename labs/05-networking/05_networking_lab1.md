@@ -253,7 +253,7 @@ The output will be a container  ID:
 ### 5. Shared Container Network
 Step by Step Guide
 1.	In the command line, enter  
-`docker run -d --name secret alpine top`  
+`docker run -d --name shared alpine top`  
 The output should look like the following:  
     ```
     Unable to find image 'alpine:latest' locally
@@ -265,7 +265,7 @@ The output should look like the following:
     ```
 
 2.	In the command line, enter  
-`docker run -d --name shared --net container:secret alpine top`  
+`docker run -d --name secret --net container:shared alpine top`  
     The output will be a container  ID:
     ```
     b045c4cdf420a6077
