@@ -94,7 +94,7 @@ Output:
 17.	View the history of the latest image:  
     `docker history startbox:300`
 
-18.	Delete the containers that you created in this exercise using 'docker rm'. Are any other flags needed?  
+18.	Delete the containers that you created in this exercise using `docker rm`. Are any other flags needed?  
     `docker rm 0mb 100mb 200mb`
 
 18.	Delete the startbox images from the local image cache.  
