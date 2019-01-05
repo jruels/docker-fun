@@ -16,7 +16,7 @@ Step by Step Guide
 
 2.	Once logged in to Docker Hub, use the Search bar at the top to locate the official WordPress image.
 
-3.	Select the wordpress image with the official tag below it.
+3.	Select the wordpress image with the official tag.
 
 4.	Here you can see all the information about this repository. Next, click on the Tags tab.
 
@@ -43,7 +43,7 @@ The .pem file will be provided by the instructor for this lab. This command will
 *If using Windows: Open Putty and connect to the session you saved earlier*
 
 
-3.	In the command line, enter the following command to deploy the WordPress All-In-One container. In the following steps, this WordPress all-in-one will receive a WordPress tool called the "WordPress CLI." This tools allows WordPress administrators to interact with their WordPress deployment using the command-line.  
+3.	In the command line, enter the following command to deploy the WordPress All-In-One container. In the following steps, this WordPress all-in-one will receive a WordPress tool called the "WordPress CLI." This tool allows WordPress administrators to interact with their WordPress deployment using the command-line.  
     `docker run -d -P --name wpaio s5atrain/wordpress:aio`  
 The last line of output will be a container ID.  
 
