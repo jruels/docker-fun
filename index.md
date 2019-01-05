@@ -1,25 +1,19 @@
 # Introduction to Docker 
 
-## lab VMs
-[VM Sheet](http://bit.ly/docker-fun-labs)
-### SSH 
-The SSH private key is available in `keys` directory. 
-
-To SSH into the VM please make sure permissions are set correctly on the key
-
-```
-chmod 600 /path/to/lab
-```
-
-The username for SSH is `ubuntu`
-
-```
-ssh -i /path/to/k8s-lab ubuntu@<labvmIP>
-
-```
-
 ## Course Content
 [Slides](http://bit.ly/docker-fun-content)  
+
+## lab VMs
+[VM Sheet](http://bit.ly/docker-fun-labs)
+
+## SSH 
+The servers are set to authenticate using SSH key which can be found in the `keys` directory. 
+
+Mac or Linux: Download `lab.pem`
+Windows: Download `lab.ppk`
+
+To access the lab servers please follow the [Setup Guide](labs/setup-env/)
+
 
 ## Labs
 
