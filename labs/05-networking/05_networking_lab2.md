@@ -8,7 +8,7 @@ Lab Structure - Overview
 
 ### 1. Build a Bridged Network
 Step by Step Guide
-1.	Locate the IP address of the node-0 machine within the Ravello app.
+1.	Locate the IP address of the Master node.
 
 2.	If on a Mac, or using Linux:  
 In a command line, enter  
