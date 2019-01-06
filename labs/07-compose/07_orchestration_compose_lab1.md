@@ -21,10 +21,16 @@ The .pem file will be provided by the instructor for this lab. This command will
 *If using Windows: Open Putty and connect to the session you saved earlier.* 
  
 
-3.	Log into the Docker host and navigate to the compose directory and list the contents of the folder.  
+3.	Log into the Docker host and run the following:  
+Download the lab files   
+`wget http://bit.ly/docker-compose-lab -O docker-compose.zip`  
+Extract the lab files   
+`sudo apt-get update && sudo apt-get install -y unzip`  
+`unzip docker-compose.zip`   
+List files in the compose directory  
 `cd compose`  
 `ls`  
-The following items will be present:  
+The following items will be present:    
     ```
     example1  example2  example3
     ```
@@ -89,10 +95,10 @@ The output will show the WordPress container being created:
 `docker ps`  
 Take note of the port that is listed for the WordPress container (8080).
 
-4.	Navigate to the node-0 from the Ravello setup.  
-
-`http://<IP>:8080`
-
+4.	Navigate to the Master_IP.  
+{% raw %}
+`http://<Master_IP>:8080`
+{% endraw %}
 If you don't see the expected install page, review the status and the logs of the WordPress container. Is there an evident problem?  
 
 5.	Back in the console window, enter  
@@ -107,7 +113,7 @@ The output will show the WordPress container starting up, and the new MySQL cont
     Creating example2_mysql_1
     ```
 
-7.	After a few moments, the WordPress Installer will be available at http://<IP>:8080
+7.	After a few moments, the WordPress Installer will be available at http://<Master_IP>:8080
 in the web browser.
 
 8.	Enter  
