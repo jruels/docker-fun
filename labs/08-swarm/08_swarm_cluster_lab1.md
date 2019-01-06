@@ -2,7 +2,7 @@
 ## Docker Swarm
 *Lab Objectives* 
 
-This lab will focus on configured the Docker Engine to run in Swarm Mode. The lab will have some demonstrations on how to use Docker Swarm.   
+This lab will focus on configuring the Docker Engine to run in Swarm Mode. The lab will have some demonstrations on how to use Docker Swarm.   
 
 Lab Structure - Overview
 1.	Configure Docker Engine to run as a Manager in Swarm Mode
