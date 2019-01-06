@@ -158,7 +158,7 @@ Take a few moments to answer the following questions to yourself:
 This may take a few minutes to pull the full WordPress deployment.
 
 5.	Verify that the containers are running:  
-`docker ps`
+`docker-compose ps`
 
 6.	Navigate to {% raw %}`http://<MASTER_IP>/wp-admin`{% endraw %} in the web browser.  
 
