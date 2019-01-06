@@ -66,8 +66,11 @@ The output will show the hello-world container being created:
 The hello-world container should not be listed. This is because it exits upon successfully running. It can be listed by passing the "all" flag.  
 `docker ps -a`
 
+You can also use `docker-compose` to interact with containers that are defined in the compose YAML file.  
+List containers: `docker-compose ps`  
+
 8.	The following command will show the logs that Docker recorded for the hello-world container.   
-`docker logs <container_ID>`
+`docker-compose logs hello-world`
 
 9.	Enter the following command to remove the container:  
 `docker-compose down`
