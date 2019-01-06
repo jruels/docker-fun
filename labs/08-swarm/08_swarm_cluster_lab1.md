@@ -151,8 +151,7 @@ The output of the command will be the ID of the new Swarm Service.
     ```
 
 17.	Run the curl command against: http://0.0.0.0:8081  
-`curl http://0.0.0.0:8081`  
-
+`curl http://0.0.0.0:8081`    
 This will output a greeting web page that outputs the hostname of the container. Can you open this web page in a browser from your local machine? Do you need to connect to a particular node in your lab environment to do so?
 
 18.	Review the list of all Docker Swarm services running on the Swarm Cluster.   
@@ -163,7 +162,7 @@ This will output a greeting web page that outputs the hostname of the container.
 
 20.	Scale up the number of container replicas in the nginx service:  
 `docker service update nginx --replicas 5`  
-Now run the service ls command from above step and notice the additional tasks. 
+Now run the `service ps` command from above step and notice the additional tasks. 
     ```
     ID            NAME     IMAGE                     NODE    DESIRED STATE  
     n16soe8tx52a  nginx.1  satoms/hello-world:swarm  node-2  Running 
