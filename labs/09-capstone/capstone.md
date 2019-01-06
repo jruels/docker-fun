@@ -14,14 +14,11 @@ Lab Structure - Overview
 ### 1. Install Docker Locally
 1.	The first part of this lab is to install Docker on your local machine. Use the links provided for your OS and follow the instructions on the Docker website:
 
-    OSX/Mac, install from:
-        https://docs.docker.com/docker-for-mac/
+    [OSX/Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac)  
 
-    Windows, install from:
-        https://docs.docker.com/docker-for-windows/
+    [Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 
-    Linux, install from:
-        https://docs.docker.com/engine/installation/
+    [Linux](https://docs.docker.com/install/)
 
 
 2.	Before moving on to the next section, you should have a working installation of Docker.
