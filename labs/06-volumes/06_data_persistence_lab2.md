@@ -155,7 +155,7 @@ Step by Step Guide
 
     `docker run -d --name app -e WORDPRESS_DB_HOST=db:3306 --link db:mysql -p 80:80 -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=password s5atrain/wordpress-cli:latest`
 
-10.	In the web browser, go to http://<docker_host_IP>:80 to display the WordPress install page. Why does this now display the install page?  What is the source of the install page? 
+10.	In the web browser, go to `http://<Master_IP>` to display the WordPress install page. Why does this now display the install page?  What is the source of the install page? 
 
 11.	Now clean up the environment.  
 `docker rm -f db && docker rm -f app`  
