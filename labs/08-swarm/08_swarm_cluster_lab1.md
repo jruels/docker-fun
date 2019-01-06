@@ -176,7 +176,7 @@ Now run the `service ps` command from above step and notice the additional tasks
 
 22.	Remove the services from the lab environment:  
 `docker service rm nginx viz`  
-This operation will terminate all replicas and delete the service.  Keep the visualizer running for insights into the state of the Swarm cluster in further exercises.
+This operation will terminate all replicas and delete the services. 
 
 ### Lab Complete!
 
