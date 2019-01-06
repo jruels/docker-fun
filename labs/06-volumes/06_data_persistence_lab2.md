@@ -20,10 +20,11 @@ The .pem file will be provided by the instructor for this lab. This command will
 `docker run -d --name db --volume mysql-db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=password mysql:5.7`
 
 4.	Inspect the mounts (Are these mounts bind-mounts or docker managed mounts?)  
-
+{% raw %}
 ```
 docker inspect -f {{.Mounts}} db
 ```
+{% endraw %}
   
 Note the mount point "/var/lib/docker/volumes/mysql-db/_data"  
 [{mysql-db /var/lib/docker/volumes/mysql-db/_data /var/lib/mysql local z true rprivate}]
@@ -89,10 +90,11 @@ The CLI will display the following:
 `exit`  
 
 5.	Inspect the database mount point again:  
-
+{% raw %}
 ```
 docker inspect -f {{.Mounts}} db  
 ```
+{% endraw %}
 
 Note that it has not changed.
 
