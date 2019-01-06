@@ -20,7 +20,11 @@ The .pem file will be provided by the instructor for this lab. This command will
 `docker run -d --name db --volume mysql-db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=password mysql:5.7`
 
 4.	Inspect the mounts (Are these mounts bind-mounts or docker managed mounts?)  
-`docker inspect -f {{.Mounts}} db`  
+
+```
+docker inspect -f {{.Mounts}} db
+```
+  
 Note the mount point "/var/lib/docker/volumes/mysql-db/_data"  
 [{mysql-db /var/lib/docker/volumes/mysql-db/_data /var/lib/mysql local z true rprivate}]
 
@@ -85,7 +89,11 @@ The CLI will display the following:
 `exit`  
 
 5.	Inspect the database mount point again:  
-`docker inspect -f {{.Mounts}} db`  
+
+```
+docker inspect -f {{.Mounts}} db  
+```
+
 Note that it has not changed.
 
 6.	Stop and delete the container, then validate that it has been deleted:  
