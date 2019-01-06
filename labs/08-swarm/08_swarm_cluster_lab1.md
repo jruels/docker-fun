@@ -37,16 +37,12 @@ As mentioned in the Presentations, all Docker Engines running on 17.03CE and abo
     ```
     Swarm initialized: current node (cfly85ocjowrh1egmgqb6mn0w) is now a manager.
     ```
-    To add a worker to this swarm, run the command from the init command. It will look similar to this but the token will be unique. Be sure to copy and paste the output of the previous command:  
+    We will not be adding a worker yet, but to do so we can use the output from the `swarm init` command. It will look similar to this but the token will be unique. Be sure to copy and save the output of the command so you will have it for later:  
     `docker swarm join \`  
     `--token SWMTKN-1-0qmd0ocza1hau359tjtlhvqyrboe3dtxgc196xy95 \`  
     `10.0.0.20:2377`  
 
-    To add a manager to this swarm, run  
-    `docker swarm join-token manager`  
-    follow the instructions to enable swarm mode. 
-
-5.	Validate that Docker Swarm Mode is enabled.  
+  5.	Validate that Docker Swarm Mode is enabled.  
 `docker info`  
 This will show a change to the value of Swarm. Note: Nodes and Manager section, as well as the "Is Manager: true" field.  
     ```
@@ -78,24 +74,16 @@ NOTE: The creation of the new ingress overlay network with a scope of swarm.
     babe87c79a79        none                null                local
     ```
 
-8.  Let's output the join token for a worker node:  
+8.  If you ever lose the join token you can retrieve it with::  
 `docker swarm join-token worker`  
 NOTE: This is the token one would use to join a worker to this Docker Swarm.   
-To add a worker to this swarm, run the following command:  
+To add a worker to this swarm, run the command you copied previously, it will look similar to:  
 
     `docker swarm join \`  
     `--token SWMTKN-1-0qmd0ocza1hau359tjtlhvqyrboe3dtxgc196xy9 \`  
     `10.0.0.20:2377`  
 
-9.	Now output the join token for a manger node:  
-`docker swarm join-token manager`  
-NOTE: This is the token one would use to join a manager to this Docker Swarm.  
-To add a worker to this swarm, run the following command using the token from the above:  
-    `docker swarm join \`  
-    `--token SWMTKN-1-e3dtxgc196xy7ihi-2jwr84ezrg0ad8ymow58gi943 \`  
-    `10.0.0.20:2377` 
-
-10.	Now inspect the configuration of the  Swarm Manager.  
+9.	Now inspect the configuration of the  Swarm Manager.  
 Run this command first:  
 `docker node inspect <MASTER NODE>`  
 This command will output a JSON file. JSON can be hard to read at times, and the --pretty flag will generate more human-readable output.  
@@ -125,7 +113,7 @@ NOTE: This container configuration, including labels of the Docker Swarm Node. A
     Engine Version:		17.03.1-ced
     ```
 
-11.	To help visualize activity in the Swarm cluster, start a Swarm service with the visualizer sample application:  
+10.	To help visualize activity in the Swarm cluster, start a Swarm service with the visualizer sample application:  
 `docker service create \`  
   `--name=viz \`  
   `--publish=8080:8080/tcp \`  
@@ -133,11 +121,11 @@ NOTE: This container configuration, including labels of the Docker Swarm Node. A
   `--mount=type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \`  
   `dockersamples/visualizer`
 
-12.	Once the service is running, use a browser to connect to Master node's IP on port 8080 to bring up the visualizer. Keep this page up to check on the status of the cluster after subsequent actions.
+11.	Once the service is running, use a browser to connect to Master node's IP on port 8080 to bring up the visualizer. Keep this page up to check on the status of the cluster after subsequent actions.
 
-13.	Log into member1 and use the worker join-token to join the node to the Docker Swarm as a worker node.
+12.	Log into member1 and use the worker join-token to join the node to the Docker Swarm as a worker node.
 
-14.	Log back into Master, and list the currently registered nodes in Docker Swarm.  
+13.	Log back into Master, and list the currently registered nodes in Docker Swarm.  
 `docker node ls`  
 Note: * shows the node you are currently logged into.   
     ```
@@ -146,9 +134,9 @@ Note: * shows the node you are currently logged into.
     byd8sd    node-1    Ready   Active
     ```
 
-15.	Log into member2 and use the worker join-token to join the node to the Docker Swarm as a worker.
+14.	Log into member2 and use the worker join-token to join the node to the Docker Swarm as a worker.
 
-16.	Log back into Master, and list the currently registered Swarm nodes again, e.g.
+15.	Log back into Master, and list the currently registered Swarm nodes again, e.g.
     ```
     ID        HOSTNAME  STATUS  AVAILABILITY     MANAGER STATUS
     cfly85 *  node-0    Ready   Active           Leader 
@@ -156,25 +144,25 @@ Note: * shows the node you are currently logged into.
     de83om    node-2    Ready   Active
     ```
 
-17.	Create a basic Docker Swarm Service that runs a simple web container on port 8081:  
+16.	Create a basic Docker Swarm Service that runs a simple web container on port 8081:  
 `docker service create --name nginx --publish 8081:80 satoms/hello-world:swarm`  
 The output of the command will be the ID of the new Swarm Service.
     ```
     n609tobgp7p93sbuo5x6rp1sd
     ```
 
-18.	Run the curl command against: http://0.0.0.0:8081  
+17.	Run the curl command against: http://0.0.0.0:8081  
 `curl http://0.0.0.0:8081`  
 
 This will output a greeting web page that outputs the hostname of the container. Can you open this web page in a browser from your local machine? Do you need to connect to a particular node in your lab environment to do so?
 
-19.	Review the list of all Docker Swarm services running on the Swarm Cluster.   
+18.	Review the list of all Docker Swarm services running on the Swarm Cluster.   
 `docker service ls`
 
-20.	List the tasks associated with a specific Swarm service.  
+19.	List the tasks associated with a specific Swarm service.  
 `docker service ps nginx`
 
-21.	Scale up the number of container replicas in the nginx service:  
+20.	Scale up the number of container replicas in the nginx service:  
 `docker service update nginx --replicas 5`  
 Now run the service ps command from step 20 and notice the additional tasks. 
     ```
@@ -186,9 +174,9 @@ Now run the service ps command from step 20 and notice the additional tasks.
     9wyexrfnmdje  nginx.5  satoms/hello-world:swarm  node-1  Running 
     ```
 
-22.	From a browser or using curl, validate the web applications are up and running. Note how the hostname reported changes as requests are serviced by one or another replica. 
+21.	From a browser or using curl, validate the web applications are up and running. Note how the hostname reported changes as requests are serviced by one or another replica. 
 
-23.	Remove the services from the lab environment:  
+22.	Remove the services from the lab environment:  
 `docker service rm nginx viz`  
 This operation will terminate all replicas and delete the service.  Keep the visualizer running for insights into the state of the Swarm cluster in further exercises.
 
