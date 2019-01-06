@@ -88,7 +88,7 @@ Run this command first:
 `docker node inspect <MASTER NODE>`  
 This command will output a JSON file. JSON can be hard to read at times, and the --pretty flag will generate more human-readable output.  
 `docker node inspect --pretty <MASTER NODE>`  
-NOTE: This container configuration, including labels of the Docker Swarm Node. Attention should be given to Status and Raft Status when looking at a Manager Node. 
+NOTE: This contains configuration, including labels of the Docker Swarm Node. Attention should be given to Status and Raft Status when looking at a Manager Node. 
     ```
     ID:			cfly85ocjowrh1egmgqb6mn0w
     Hostname:		node-0
