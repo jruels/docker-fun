@@ -76,7 +76,7 @@ The CLI will display the following:
     ```
 Type `exit` twice to get back to Docker host
     
-    `exit`
+    `exit`  
     `exit`
    
     Note -ppassword is not a typo, and exit will need to be passed twice to fully exit bash. 
