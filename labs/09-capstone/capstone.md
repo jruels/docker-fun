@@ -39,7 +39,7 @@ Lab Structure - Overview
 
 1.	The next task is to Deploy WPaaS for three customers with the following configuration:
 
-    1.	Image: { %raw }`<student_repository>/wordpress-cli:aio-manual` { %endraw% }
+    1.	Image: `<student_repository>/wordpress-cli:aio-manual`
     2.	expose port 80 (if required)
     3.	Dynamically assign mapped ports to port 80
     4.	Run on a network bridge called "wpaas_network"
@@ -50,7 +50,9 @@ Lab Structure - Overview
 
     1.	Images:
         - mysql:5.7
-        - { %raw }<student_repository>/wordpress:latest { %endraw% }
+{% raw %}
+        - <student_repository>/wordpress:latest
+{% endraw %}
     2.	Volume: "./.data/db:/var/lib/mysql"
     3.	Set restart to "Always"
     4.	Define environment for db service as:
