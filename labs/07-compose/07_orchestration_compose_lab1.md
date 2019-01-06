@@ -116,7 +116,7 @@ The output will show the WordPress container starting up, and the new MySQL cont
     Creating example2_mysql_1
     ```
 
-7.	After a few moments, the WordPress Installer will be available at http://<Master_IP>:8080
+7.	After a few moments, the WordPress Installer will be available at {% raw %} `http://<Master_IP>:8080` {% endraw%}
 in the web browser.
 
 8.	Enter  
