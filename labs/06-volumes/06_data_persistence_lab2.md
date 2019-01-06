@@ -73,9 +73,11 @@ The CLI will display the following:
     +--------------+
     | root         |
     +--------------+
-    exit
-    exit
     ```
+   ``` 
+    exit
+    exit
+   ```
     Note -ppassword is not a typo, and exit will need to be passed twice to fully exit bash. 
 
 3.	Create a new user:  
