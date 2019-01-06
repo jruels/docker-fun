@@ -95,7 +95,7 @@ The output will show the WordPress container being created:
     ```
 
 3.	Enter  
-`docker ps`  
+`docker-compose ps`  
 Take note of the port that is listed for the WordPress container (8080).
 
 4.	Navigate to the Master_IP.  
@@ -106,7 +106,7 @@ If you don't see the expected install page, review the status and the logs of th
 
 5.	Back in the console window, enter  
 `vim docker-compose.yml`
-Delete the comment marks from in front of the MySQL container by moving the cursor down and using the 'x' key to delete each '#' character. After deleting the comment marks, save and exit vim via <ESC> `:wq`
+Delete the comment marks from in front of the MySQL container by moving the cursor down and using the `x` key to delete each `#` character. After deleting the comment marks, save and exit vim via `esc` `:wq`
 
 6.	Enter  
 `docker-compose up -d`  
@@ -160,7 +160,7 @@ This may take a few minutes to pull the full WordPress deployment.
 5.	Verify that the containers are running:  
 `docker ps`
 
-6.	Navigate to http://<IP>:80/wp-admin in the web browser.  
+6.	Navigate to {% raw %}`http://<MASTER_IP>/wp-admin`{% endraw %} in the web browser.  
 
 7.	Log in to WordPress with the following credentials:  
 
@@ -173,7 +173,7 @@ This may take a few minutes to pull the full WordPress deployment.
 
 10.	Make any changes to the post on this page and click Update when finished.
 
-11.	Navigate to http://<IP>:80 in another web browser tab. The page that loads should be the WordPress blog with the updated post.
+11.	Navigate to {% raw %} `http://<MASTER_IP>` {% endraw %} in another web browser tab. The page that loads should be the WordPress blog with the updated post.
 
 12.	Now, find the ID of the WordPress application container and make a note of it. Stop and remove the container. Confirm that the WordPress site is no longer available.
 
