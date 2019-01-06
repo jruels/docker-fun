@@ -42,27 +42,25 @@ Lab Structure - Overview
     1.	Image: `<student_repository>/wordpress-cli:aio-manual`
     2.	expose port 80 (if required)
     3.	Dynamically assign mapped ports to port 80
-    4.	Run on a network bridge called "wpaas_network"
-    5.	Use a volume for "/var/html/www" to provide a level of data protection
+    4.	Run on a network bridge called `wpaas_network`
+    5.	Use a volume for `/var/html/www` to provide a level of data protection
 
 ### 4. Deploy WordPress Using Docker Compose
 1.	Use the docker-compose command to deploy a WordPress environment with the following configuration:
 
     1.	Images:
-        - mysql:5.7
-{% raw %}
-        - <student_repository>/wordpress:latest
-{% endraw %}
-    2.	Volume: "./.data/db:/var/lib/mysql"
-    3.	Set restart to "Always"
+        - `mysql:5.7`
+        - `<student_repository>/wordpress:latest`
+    2.	Volume: `./.data/db:/var/lib/mysql`
+    3.	Set restart to `Always`
     4.	Define environment for db service as:
-        - MYSQL_ROOT_PASSWORD: wordpress
-        - MYSQL_DATABASE: wordpress
-        - MYSQL_USER: wordpress
-        - MYSQL_PASSWORD: wordpress
+        - MYSQL_ROOT_PASSWORD: `wordpress`
+        - MYSQL_DATABASE: `wordpress`
+        - MYSQL_USER: `wordpress`
+        - MYSQL_PASSWORD: `wordpress`
     5.	Define environment for app service as:
-        - WORDPRESS_DB_HOST: db:3306
-        - WORDPRESS_DB_PASSWORD: wordpress
+        - WORDPRESS_DB_HOST: `db:3306`
+        - WORDPRESS_DB_PASSWORD: `wordpress`
 
 ### 5. Build a Dev Image Using a Dockerfile
 1.	Build a development image from ubuntu:14.04 using a Dockerfile with the following configuration (no specific order required for installing packages):
