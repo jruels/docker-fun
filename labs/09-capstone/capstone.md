@@ -1,6 +1,6 @@
 # LAB
 ## Capstone
-*Lab Objectives*
+*Lab Objectives*  
 This lab is designed to test your knowledge of Docker gained from this course. By the end of the lab, you will have a working installation of Docker on your personal machine and a basic understanding of how to deploy applications locally, push and pull image repositories to Docker Hub, and build images using the methods described in the earlier labs.
 
 Lab Structure - Overview
