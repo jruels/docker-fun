@@ -76,8 +76,7 @@ NOTE: The creation of the new ingress overlay network with a scope of swarm.
 
 8.  If you ever lose the join token you can retrieve it with::  
 `docker swarm join-token worker`  
-NOTE: This is the token one would use to join a worker to this Docker Swarm.   
-To add a worker to this swarm, run the command you copied previously, it will look similar to:  
+NOTE: This is the token one would use to join a worker to the Docker Swarm cluster.   
 
     `docker swarm join \`  
     `--token SWMTKN-1-0qmd0ocza1hau359tjtlhvqyrboe3dtxgc196xy9 \`  
@@ -164,7 +163,7 @@ This will output a greeting web page that outputs the hostname of the container.
 
 20.	Scale up the number of container replicas in the nginx service:  
 `docker service update nginx --replicas 5`  
-Now run the service ps command from step 20 and notice the additional tasks. 
+Now run the service ls command from above step and notice the additional tasks. 
     ```
     ID            NAME     IMAGE                     NODE    DESIRED STATE  
     n16soe8tx52a  nginx.1  satoms/hello-world:swarm  node-2  Running 
