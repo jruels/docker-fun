@@ -61,6 +61,7 @@ Lab Structure - Overview
     5.	Define environment for app service as:
         - WORDPRESS_DB_HOST: `db:3306`
         - WORDPRESS_DB_PASSWORD: `wordpress`
+    6. Configure wordpress to use dynamic host port
 
 ### 5. Build a Dev Image Using a Dockerfile
 1.	Build a development image from ubuntu:14.04 using a Dockerfile with the following configuration (no specific order required for installing packages):
