@@ -49,7 +49,7 @@ Note the mount point.
 `docker port $(docker ps -lq)`  
 Note the WordPress application container is bound to all interfaces on port 80.
 
-9.	From a browser, open http://<docker_host_IP>:80 and configure WordPress with the following credentials. Log in to WordPress after.  
+9.	From a browser, open `http://<Master_IP>` and configure WordPress with the following credentials. Log in to WordPress after.  
 `user: root`  
 `password: root`  
 `email: me@me.com`  
@@ -111,7 +111,7 @@ Note that the mount point has not changed.
 `docker run -d --name app -e WORDPRESS_DB_HOST=db:3306 --link db:mysql -p 80:80 -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=password s5atrain/wordpress-cli:latest`
 
 9.	In a web browser, log in with the username and password for the new user you created earlier (jeff/password):  
-`http://<docker_host_IP>:80 `
+`http://<Master_IP>`
 
 10.	ssh into the MySQL database and display the WordPress user list to validate that the user is still local:  
 `docker exec -i -t db bash`  
@@ -124,7 +124,7 @@ Note that the mount point has not changed.
 ## 3. Investigate Persistence in Volumes
 Step by Step Guide
 1.	In a web browser, log in with the root username and password from earlier in the lab.  
-`http://<docker_host_IP>:80`
+`http://<Master_IP>`
 
 2.	Click on Dashboard from the dropdown box at the top left of the screen that says wordpress.  
 
