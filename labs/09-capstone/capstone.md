@@ -50,7 +50,7 @@ Lab Structure - Overview
 
     1.	Images:
         - mysql:5.7
-        - { %raw }<student_repository>/wordpress:latest {% endraw %}
+        - `{ %raw }<student_repository>/wordpress:latest {% endraw %}`
     2.	Volume: "./.data/db:/var/lib/mysql"
     3.	Set restart to "Always"
     4.	Define environment for db service as:
