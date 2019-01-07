@@ -1,7 +1,7 @@
 # Introduction to Docker 
 
 ## Course Content
-[Slides](https://www.dropbox.com/sh/4xzq3ziq59td9b6/AADTaAJ2tn64y74N0l-wLE4Ma?dl=0)  
+[Slides](http://bit.ly/docker-fun-slides)  
 
 ## lab VMs
 [VM Sheet](http://bit.ly/docker-fun-labs)
