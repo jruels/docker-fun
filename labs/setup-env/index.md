@@ -9,9 +9,9 @@ chmod 600 /path/to/lab
 ```
 
 ### SSH to lab servers 
-The username for SSH is `ubuntu`
+The username for SSH is `root`
 ```
-ssh -i /path/to/k8s-lab ubuntu@<LAB IP> 
+ssh -i /path/to/k8s-lab root@<LAB IP> 
 ```
 
 
