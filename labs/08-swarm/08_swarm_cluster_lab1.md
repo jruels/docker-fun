@@ -17,7 +17,7 @@ Step by Step Guide
 
 2.	If on a Mac, or using Linux:  
 In a command line, enter  
-`ssh -i </Users/…/>docker.pem ubuntu@<IP>`
+`ssh -i </Users/…/>docker.pem root@<IP>`
 The .pem file will be provided by the instructor for this lab. This command will connect the console to the Docker machine.  
 
 *If using Windows: Open Putty and connect to the session you saved earlier.*

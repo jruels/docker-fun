@@ -64,7 +64,7 @@ Lab Structure - Overview
     6. Set wordpress service to use dynamic host ports for 80 and 443
 
 ### 5. Build a Dev Image Using a Dockerfile
-1.	Build a development image from ubuntu:14.04 using a Dockerfile with the following configuration (no specific order required for installing packages):
+1.	Build a development image from ubuntu:18.04 using a Dockerfile with the following configuration (no specific order required for installing packages):
 
     1.	Install packages:  
     `mercurial`  

@@ -13,7 +13,7 @@ Step by Step Guide
 1.	Locate the IP address of the Master machine in lab folder.
 
 2.	In a command line, enter  
-`ssh -i </Users/…/>docker.pem ubuntu@<IP>`  
+`ssh -i </Users/…/>docker.pem root@<IP>`  
 The .pem file will be provided by the instructor for this lab. This command will connect the console to the Docker machine.
 
 3.	Create the Database container using a volume:  
