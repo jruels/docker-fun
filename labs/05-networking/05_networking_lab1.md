@@ -150,7 +150,7 @@ The output should look like the following:
     Adding a dns-server suffix to container allows the container to append the search suffix to the containers DNS name resolution. In the above example, searching for docs, resulting in entire DNS lookup being docs.docker.com (similar to most Linux systems).
 
 2.	Run following command and add a host entry to the container /etc/hosts file.  
-`docker run --rm --add-host devdb:127.0.0.1 alpine nslookup devdb`  
+`docker run --rm --add-host devdb:127.0.0.1 alpine ping devdb`  
 The output should look like the following:
     ```
     PING devdb (127.0.0.1): 56 data bytes
