@@ -32,7 +32,7 @@ As mentioned in the Presentations, all Docker Engines running on 17.03CE and abo
 
 4.	In the home directory in the command line, enter the following command, which enables Swarm Mode.   
 `docker swarm init`  
-    *Note: if the VM has multiple IPs you will get an error about not being able to determine what IP to bind to. Find the public IP and use --advertise-addr to configure it and try again*  
+    *Note: if the VM has multiple IPs you will get an error about not being able to determine what IP to bind to. Find the public IP and use `--advertise-addr` to configure it and try again*  
     Output  
     ```
     Swarm initialized: current node (cfly85ocjowrh1egmgqb6mn0w) is now a manager.
