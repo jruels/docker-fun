@@ -21,4 +21,3 @@ Lab 7: [Compose](labs/07-compose/07_orchestration_compose_lab1.md)
 Lab 8: [Swarm](labs/08-swarm/08_swarm_cluster_lab1.md)  
 Lab 9: [Capstone](labs/09-capstone/capstone.md)  
 
-[Class Evaluations](http://www.metricsthatmatter.com/student/evaluation.asp?k=16324&i=ILT00433323)
