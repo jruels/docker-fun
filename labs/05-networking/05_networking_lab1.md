@@ -1,5 +1,3 @@
-# 05_networking_lab1
-
 # LAB
 ## Networking
 _Lab Objectives_
