@@ -4,8 +4,7 @@
 
 This lab demonstrates how to create and configure Docker bridge networks.
 
-Lab Structure - Overview
-1. Build a Bridge Network
+
 ### 1. Build a Bridged Network
 Step by Step Guide
 1. 
