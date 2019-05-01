@@ -20,7 +20,7 @@ In a command line, enter
 The .pem file will be provided by the instructor for this lab. This command will connect the console to the Docker machine.
 
 
-/If using Windows: Open Putty and connect to the session you saved earlier./
+*If using Windows: Open Putty and connect to the session you saved earlier.*
 3. 
 List the current Docker networks
 
