@@ -1,5 +1,3 @@
-# 04_images_lab1
-
 # LAB
 ## Docker Images Part 1
 **Lab Objectives**
