@@ -6,7 +6,7 @@
 This lab demonstrates how to add, change and delete files within a container. Students will inspect the changes as they are made to a docker image and it’s impacts on the Union FileSystem.
 
 Lab Structure - Overview
-1.	Inspect Changes in to a docker image and the Union FileSystem
+1.	Inspect Changes in a docker image and the Union FileSystem
  
 ### 1. Inspect Changes in a Filesystem
 Step by Step Guide
