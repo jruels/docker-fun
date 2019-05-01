@@ -83,7 +83,7 @@ The output should look like the following:
     ```
     Unlike the container using the network none, this container is able to successfully access the Internet through the docker bridge and the docker host’s network.
 
-3.	Run the following command to create a container using the docker bridge, this container will automatically delete itself after it ping www.google.com twice. This demonstrates that the container leverages the docker host’s /etc/resolv.conf.  
+3.	Run the following command to create a container using the docker bridge, this container will automatically delete itself after it pings www.google.com twice. This demonstrates that the container leverages the docker host’s /etc/resolv.conf.  
     `docker run --rm --net bridge alpine:latest ping -w 2 www.google.com`  
 The output should look like the following:
     ```
