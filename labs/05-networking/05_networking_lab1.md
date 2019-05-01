@@ -1,6 +1,8 @@
+# 05_networking_lab1
+
 # LAB
 ## Networking
-_Lab Objectives_
+/Lab Objectives/
 
 This lab demonstrates the major networking models for Docker containers, through configuration of networking in a series of examples.
 
@@ -26,7 +28,7 @@ In a command line, enter
 The .pem file will be provided by the instructor for this lab. This command will connect the console to the Docker machine.
 
 
-_If using Windows: Open Putty and connect to the session you saved earlier._
+/If using Windows: Open Putty and connect to the session you saved earlier./
 3. 
 Run the following command to create a container using the the none network, this container will automatically delete itself after it outputs the Ethernet configurations.
 
@@ -96,7 +98,7 @@ PING 8.8.4.4 (8.8.4.4): 56 data bytes
 Unlike the container using the network none, this container is able to successfully access the Internet through the docker bridge and the docker host’s network.
 
 3. 
-Run the following command to create a container using the docker bridge, this container will automatically delete itself after it ping www.google.com twice. This demonstrates that the container leverages the docker host’s _etc_resolv.conf.
+Run the following command to create a container using the docker bridge, this container will automatically delete itself after it ping www.google.com twice. This demonstrates that the container leverages the docker host’s /etc/resolv.conf.
 
 `docker run --rm --net bridge alpine:latest ping -w 2 www.google.com`
 
@@ -135,9 +137,9 @@ The output should look like the following:
 The container is automatically assigned eth0 and assigned an IP Address. This is the default behavior of docker. By default, docker will assign containers to the default bridge network.
 
 5. 
-Run following command and statically assign a dns server to the containers _etc_resolv.conf
+Run following command and statically assign a dns server to the containers /etc/resolv.conf
 
-`docker run --rm --dns 8.8.8.8 alpine:latest nslookup google.com`
+`docker run --rm --dns 8.8.8.8 aslaen/nslookup nslookup google.com`
 
 The output should look like the following:
 ```
@@ -148,14 +150,14 @@ Name:      google.com
 Address 1: 2607:f8b0:4005:804::200e sfo07s13-in-x0e.1e100.net
 Address 2: 216.58.217.206 lax17s05-in-f206.1e100.net
 ```
-The container’s _etc_resolv.conf will resolve the IP Addess for the DNS name google.com (similar to most Linux systems).
+The container’s /etc/resolv.conf will resolve the IP Addess for the DNS name google.com (similar to most Linux systems).
 
 ### 3. DNS Search and Host Record
 Step by Step Guide
 1. 
 Run following command and assign a DNS search suffix to the container.
 
-`docker run --rm --dns 8.8.8.8 --dns-search docker.com alpine:latest nslookup docs`
+`docker run --rm --dns 8.8.8.8 --dns-search docker.com aslaen/nslookup nslookup docs`
 
 The output should look like the following:
 ```
