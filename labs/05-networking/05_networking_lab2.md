@@ -26,7 +26,7 @@ List the current Docker networks
 
 `docker network ls`
 
-There following should be listed:
+The following should be listed:
 ```
 NETWORK ID          NAME                DRIVER
 bc712029c257        bridge              bridge
