@@ -73,12 +73,14 @@ Two ports will be listed as the output:
     `docker exec -it wpaio /bin/bash`
 
 9.	Once inside the WordPress container, enter the following commands in following sequence to install the WordPress CLI tool.  
-    `apt-get update`  
-    `apt-get install wget –y`  
-    `wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar`  
-    `mv wp-cli.phar /usr/local/bin/wp && chmod +x /usr/local/bin/wp`  
-    `cd /var/www/html`  
-    `wp theme list --allow-root`  
+    ```
+     apt-get update 
+     apt-get install -y wget  
+     wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+     mv wp-cli.phar /usr/local/bin/wp && chmod +x /usr/local/bin/wp  
+     cd /var/www/html  
+     wp theme list --allow-root  
+    ```
 The command line will return the following output and validate that the WordPress CLI has been installed on the running container.  
     ```
     No value for $TERM and no -T specified   
