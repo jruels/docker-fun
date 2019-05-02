@@ -83,11 +83,9 @@ Lab Structure - Overview
     3.	Create a home directory for user "dev"
 
 ### 6. Bonus tasks (optional)
-1.	As a single command line, deploy four alpine top containers.
+1.	Add an additional WordPress host in your Docker Compose version using the same database, and place both web hosts behind an instance of HAProxy.
 
-2.	Add an additional WordPress host in your Docker Compose version using the same database, and place both web hosts behind an instance of HAProxy.
-
-3.	Write a shell script that creates a two tier WordPress deployment:
+2.	Write a shell script that creates a two tier WordPress deployment:
 
 ### Lab Complete!
 
