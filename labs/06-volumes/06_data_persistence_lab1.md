@@ -86,7 +86,7 @@ The machine will output the following code:
 4.	Exit the container.  
 `quit`
 
-5.	Delete the new container cass2.  
+5.	Delete containers cass-shared and cass2.  
 `docker rm -vf cass2 cass-shared`
 
 ### Lab Complete!
