@@ -26,9 +26,6 @@ docker inspect -f {{.Mounts}} db
 ```
 {% endraw %}
   
-Note the mount point "/var/lib/docker/volumes/mysql-db/_data"  
-[{mysql-db /var/lib/docker/volumes/mysql-db/_data /var/lib/mysql local z true rprivate}]
-
 5.	List the Docker volumes:  
 `docker volume ls`  
 Output:  
