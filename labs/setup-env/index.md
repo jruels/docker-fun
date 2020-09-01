@@ -1,7 +1,7 @@
 # Lab Setup 
 
 ## MacOS 
-Download `lab.pem` from the `keys` directory
+Download SSH key named `lab` from the `keys` directory
 
 ### Set permission on SSH key 
 ```
