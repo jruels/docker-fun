@@ -91,7 +91,7 @@ Step by Step Guide
 The output will show the WordPress container being created:  
     ```
     Creating network "example2_default" with the default driver
-    Creating example1_wordpress_1
+    Creating example2_wordpress_1
     ```
 
 3.	Enter  
