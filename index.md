@@ -4,7 +4,7 @@
 [Slides](http://bit.ly/docker-fun-slides)  
 
 ## lab VMs
-[VM Sheet](http://bit.ly/docker-fun-labs)
+[VM Sheet](https://docs.google.com/spreadsheets/d/1bX7U7vJcMRu2LI8_X1ROtzFVQ3N7AxLFbk4kZipT3uE/edit?usp=sharing)
 
 To access the lab servers please follow the [Setup Guide](labs/setup-env/)
 
