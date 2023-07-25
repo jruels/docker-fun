@@ -138,6 +138,12 @@ This validates that the WordPress CLI is already installed on the image. The ima
 
 7.	Return to view your Docker Hub account in a web browser. Find the repository for the image you pushed, and view the information you can now edit. What statistics is Docker Hub reporting for the repository?
 
+### Cleanup
+Remove the containers by running: 
+```bash 
+docker rm -f $(docker ps -q)
+```
+
 ### Lab Complete!
 
 <!-- 
