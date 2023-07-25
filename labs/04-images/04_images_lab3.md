@@ -10,16 +10,6 @@ Lab Structure - Overview
  
 ### 1. Inspect Changes in a Filesystem
 Step by Step Guide
-1.	Locate the IP address of the Master machine within the lab folder.
-
-2.	If on a Mac, or using Linux:
-In a command line, enter  
-`ssh -i </Users/…/>docker.pem root@<IP>`  
-The .pem file will be provided by the instructor for this lab. This command will connect the console to the Docker machine.
-
-*If using Windows: Open Putty and connect to the session you saved earlier.*
- 
-
 3.	First, check the system to verify the image Busybox has been pulled to the machine.  
     `docker images busybox`  
 If it is not, pull it from Docker Hub:  
