@@ -6,7 +6,6 @@ This lab demonstrates how to use the Docker Compose feature. There are three exa
 Lab Structure - Overview
 1.	Compose Hello-World
 2.	Install WordPress
-3.	Compose Full WordPress Deployment
  
 
 ### 1. Compose Hello-World
@@ -133,61 +132,30 @@ This will only stop the containers from running, it will not remove them. Enter 
 
 12.	Recheck the networks in Docker. Is the application network still available?
 	
-
-
-### 3. Compose Full WordPress Deployment
-Step by Step Guide
-1.	Navigate to the example3 directory and list the contents. There will be a single docker_compose.yml file inside.  
-`cd ../example3`  
-`ls`
-
-2.	Inspect the Docker Compose file.  
-`vim docker-compose.yml`  
 Take a few moments to answer the following questions to yourself:
 
-    - Identify the volumes that are being created.
-    - What is the driver for the mariadb data volume?
-    - There are two services: mariadb and wordpress. Which one will be instantiated first?
+     - Identify the volumes that are being created.
+     - What is the driver for the mariadb data volume?
+     - There are two services: mariadb and wordpress. Which one will be instantiated first?
 
-    If you are having trouble answering these questions, ask the instructor for help.
+     If you are having trouble answering these questions, ask the instructor for help.
 
-3.	Exit vim.
+ 3.  Exit vim.
 
-4.	Enter  
-`docker compose up -d`  
-This may take a few minutes to pull the full WordPress deployment.
+ 4.  Enter
+ `docker compose up -d`
+ This may take a few minutes to pull the full WordPress deployment.
 
-5.	Verify that the containers are running:  
-`docker compose ps`
+ 5.  Verify that the containers are running:
+ `docker compose ps`
 
-6.	Navigate to {% raw %}`http://<MASTER_IP>/wp-admin`{% endraw %} in the web browser.  
+ 6.  Navigate to {% raw %}`http://<MASTER_IP>:8080`{% endraw %} in the web browser.
 
-7.	Log in to WordPress with the following credentials:  
+ 16. Back in the console window, stop and remove the application using docker compose. Check the list of available Docker volumes. Has the list changed?
 
-    `Username: user`  
-    `Password: bitnami`  
-
-8.	On the Dashboard page, under At a Glance, click on the Post link
-
-9.	Edit the Hello World! post.
-
-10.	Make any changes to the post on this page and click Update when finished.
-
-11.	Navigate to {% raw %} `http://<MASTER_IP>` {% endraw %} in another web browser tab. The page that loads should be the WordPress blog with the updated post.
-
-12.	Now, find the ID of the WordPress application container and make a note of it. Stop and remove the container. Confirm that the WordPress site is no longer available.
-
-13.	List the available Docker volumes. Did removing the WordPress application container affect any volumes?
-
-14.	Restore the application configuration using the docker compose up command in detached mode. 
-
-15.	Navigate back to the WordPress site in a web browser tab. Do you see the changes you made to the Hello World post in step 10? Why or why not?
-
-16.	Back in the console window, stop and remove the application using docker compose. Check the list of available Docker volumes. Has the list changed?
-
-17.	Use the -v flag to docker compose down to remove the volumes listed in the compose file:  
-`docker compose down -v`  
-Recheck the Docker volume list after the command has run.
+ 17. Use the -v flag to docker compose down to remove the volumes listed in the compose file:
+ `docker compose down -v`
+ Recheck the Docker volume list after the command has run.
 
 ### Lab Complete!
 
