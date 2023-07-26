@@ -10,15 +10,6 @@ Lab Structure - Overview
 ### 1. Define a Volume and Run a Container
 Step by Step Guide
 
-1.	Locate the IP address of the Master machine in the lab folder.
-
-2.	If on a Mac, or using Linux:  
-In a command line, enter  
-`ssh -i </Users/…/>docker.pem root@<IP>`  
-The .pem file will be provided by the instructor for this lab. This command will connect the console to the Docker machine.
-
-*If using Windows: Open Putty and connect to the session you saved earlier.*
-
 3.	In the command line, create a single container that defines a volume and specifies the volume mount point:  
 `docker run -d --volume /var/lib/cassandra/data --name cass-shared alpine echo Data Container`
 

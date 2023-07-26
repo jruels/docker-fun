@@ -10,12 +10,6 @@ Lab Structure - Overview
 
 ### 1. Deploy WordPress Using Volumes
 Step by Step Guide
-1.	Locate the IP address of the Master machine in lab folder.
-
-2.	In a command line, enter  
-`ssh -i </Users/…/>docker.pem root@<IP>`  
-The .pem file will be provided by the instructor for this lab. This command will connect the console to the Docker machine.
-
 3.	Create the Database container using a volume:  
 `docker run -d --name db --volume mysql-db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=password mysql:5.7`
 
