@@ -1,10 +1,7 @@
 # Introduction to Docker 
 
 ## lab VMs
-[VM Sheet](https://docs.google.com/spreadsheets/d/1H3t6jZNpFFLukOuPm3rkKTMVJIX5ozDxzOiBVTd6F0M/edit#gid=0)
-
-To access the lab servers please follow the [Setup Guide](labs/setup-env/)
-
+The instructor will provide lab environment information.
 
 ## Labs
 
