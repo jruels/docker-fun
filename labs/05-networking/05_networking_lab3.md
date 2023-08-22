@@ -44,9 +44,3 @@ This example now works because the MySQL Database and the WordPress application 
 `docker rm -f app db`
 
 ### Lab Complete!
-
-<!-- 
-LastTested: 2018-09-28
-OS: Ubuntu 18.04
-DockerVersion: 18.06.1-ce, build e68fc7a
--->

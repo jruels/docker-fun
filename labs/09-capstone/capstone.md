@@ -49,7 +49,7 @@ Lab Structure - Overview
 1.	Use the docker-compose command to deploy a WordPress environment with the following configuration:
 
     1.	Images:
-        - `mysql:5.7`
+        - `mysql`
         - `<student_repository>/wordpress:latest`
     2.	Volume: `./.data/db:/var/lib/mysql`
     3.	Set restart to `Always`
@@ -88,9 +88,3 @@ Lab Structure - Overview
 2.	Write a shell script that creates a two tier WordPress deployment:
 
 ### Lab Complete!
-
-<!-- 
-LastTested: 2018-09-28
-OS: Ubuntu 18.04
-DockerVersion: 18.06.1-ce, build e68fc7a
--->

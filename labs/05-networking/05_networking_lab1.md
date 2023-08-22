@@ -347,9 +347,3 @@ Step by Step Guide
     Using the --net host method gives the container access to the docker host’s network interfaces and should be used only as a last resort. Although the container does have access to the host’s network interfaces, it does not have access to the host’s resources outside of its namespace (cpu, ram, storage, etc).
 
 ### Lab Complete!
-
-<!-- 
-LastTested: 2018-09-28
-OS: Ubuntu 18.04
-DockerVersion: 18.06.1-ce, build e68fc7a
--->

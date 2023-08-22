@@ -81,9 +81,3 @@ The machine will output the following code:
 `docker rm -vf cass2 cass-shared`
 
 ### Lab Complete!
-
-<!-- 
-LastTested: 2018-09-28
-OS: Ubuntu 18.04
-DockerVersion: 18.06.1-ce, build e68fc7a
--->
