@@ -4,6 +4,7 @@
 The instructor will provide lab environment information.
 
 ## Labs
+To access the lab servers please follow the [Setup Guide](labs/setup-env/)
 
 ### Day 1
 Lab 4: [Images](labs/04-images/)  
