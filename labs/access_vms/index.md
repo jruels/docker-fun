@@ -3,7 +3,7 @@ At the top of this page, right-click the "View on GitHub" button, and choose "op
 
 ## MacOS 
 
-In the folder extracted from above, go to the `keys` folder and set the permissions of lab.pem`.
+In the folder extracted from above, go to the `keys` folder and set the permissions of `lab.pem`.
 
 ### Set permission on SSH key 
 ```
