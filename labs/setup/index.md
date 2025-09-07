@@ -25,7 +25,7 @@ In the Remote Explorer, hover your mouse cursor over **SSH**, click on the gear 
 Add the following to the SSH configuration file, replacing `<IP of Server>` with the actual IP address.
 
 ```plaintext
-Host leader
+Host docker
   HostName <IP of Server>
   IdentityFile "C:\Users\tekstudent\Downloads\repos\docker-fun\keys\lab.pem"
   User ubuntu
