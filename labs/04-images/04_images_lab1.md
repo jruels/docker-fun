@@ -113,10 +113,13 @@ Step by Step Guide
 4.	Using the new image created in the previous step, enter  
     `docker push <dockerhubusername>/wordpress-cli:aio-manual`
 
-5.	Deploy a container from the newly created image, this container will create a read/write layer above the previous layer which carries the installed WordPress CLI.  
+5.	Delete wpaio container  
+    `docker rm -f wpaio`
+
+6.	Deploy a container from the newly created image, this container will create a read/write layer above the previous layer which carries the installed WordPress CLI.  
     `docker run -d -P --name wpaio2 <dockerhubusername>/wordpress-cli:aio-manual  `
 
-6.	Test the install again with the same execute command as before:  
+7.	Test the install again with the same execute command as before:  
     `docker exec wpaio2 wp theme list --allow-root --path='/var/www/html'`  
     The output should remain the same:  
     
@@ -128,7 +131,7 @@ Step by Step Guide
     ```
     This validates that the WordPress CLI is already installed on the image. The image wordpress-cli:aio-manual was created from the read/write layer of the previous container wpaio; which, had the WordPress CLI installed on it. 
     
-7.	Return to view your Docker Hub account in a web browser. Find the repository for the image you pushed, and view the information you can now edit. What statistics is Docker Hub reporting for the repository?
+8.	Return to view your Docker Hub account in a web browser. Find the repository for the image you pushed, and view the information you can now edit. What statistics is Docker Hub reporting for the repository?
 
 ### Cleanup
 Remove the containers by running: 
