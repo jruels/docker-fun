@@ -3,6 +3,10 @@
 ## lab VMs
 [Windows VMs](VM_access.md)  
 [Docker VM IPs](https://docs.google.com/spreadsheets/d/1H3t6jZNpFFLukOuPm3rkKTMVJIX5ozDxzOiBVTd6F0M/edit?usp=sharing)   
+
+## Slides 
+[Day 1](slides/Docker-day1.pdf)   
+
 ## Labs
 To access the lab server please follow the [Setup Guide](labs/setup/)
 
