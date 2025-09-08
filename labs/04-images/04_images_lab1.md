@@ -11,7 +11,7 @@ Lab Structure - Overview
 
 ### 1. Search Docker Hub for Images
 Step by Step Guide
-1.	In a web browser, navigate to [Docker Hub](http://hub.docker.com) and log in. Creating a Docker Hub account is free and simple if you do not have one already.
+1.	In a web browser, navigate to [Docker Hub](http://hub.docker.com) and log in. Creating a Docker Hub account is free and straightforward if you don't already have one.
 
 2.	Once logged in to Docker Hub, use the Search bar at the top to locate the official WordPress image.
 
@@ -21,9 +21,9 @@ Step by Step Guide
 
 5.	This tab shows a list of all the images that have been tagged in this repository.
 
-6.	At the top of the screen, search for nginx and select one of the repositories to see more details.
+6.	Now, at the top of the screen, use the search bar to look up `nginx` and select one of the repositories to see more details.
 
-7.	Look on the page for a link to the repo. Open this and review the Dockerfile.
+7.	Look on the page for a link to the GitHub repo. Open this and review the Dockerfile.
 
 8.	This is where the information about the base image and repository maintainer, as well as the build code, is located.
 

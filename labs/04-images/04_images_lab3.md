@@ -7,12 +7,12 @@ This lab demonstrates how to add, change and delete files within a container. St
 
 Lab Structure - Overview
 1.	Inspect Changes in a docker image and the Union FileSystem
- 
+
 ### 1. Inspect Changes in a Filesystem
 Step by Step Guide
 3.	First, check the system to verify the image Busybox has been pulled to the machine.  
     `docker images busybox`  
-If it is not, pull it from Docker Hub:  
+    If it is not, pull it from Docker Hub:  
     `docker pull busybox`
 
 4.	View the history of the image:  
@@ -20,19 +20,20 @@ If it is not, pull it from Docker Hub:
 
 5.	Start and enter a new container called 0mb (zero megabytes):  
     `docker run -it --name 0mb busybox /bin/ash`  
-Create a new file inside the container that is 100MB in size and exit. The following command will do this for you.   
+    Create a new file inside the container that is 100MB in size and exit. The following command will do this for you.   
     `dd if=/dev/zero of=100mb_file bs=102400000 count=1`  
     `exit`  
 
 6.	Inspect the changes made to the container:  
     `docker diff 0mb`  
-Output:  
+    Output:  
+    
     ```
     A /100mb_file
     C /root
     A /root/.ash_history
     ```
-
+    
 7.	Create a new image from the changes made to the container and tag it with 100:  
     `docker commit -m "created 100mb file" -a <your name> 0mb startbox:100`
 
@@ -41,13 +42,13 @@ Output:
 
 9.	Start and enter the startbox:100 container:  
     `docker run -it --name 100mb startbox:100 /bin/ash`  
-Change the file inside the container and exit:  
+    Change the file inside the container and exit:  
     `dd if=/dev/zero of=100mb_file bs=102400000 count=1`  
     `exit`
 
 10.	Inspect the changes made to the container:  
     `docker diff 100mb`  
-Output:
+    Output:
     ```
     C /100mb_file
     C /root
@@ -62,13 +63,13 @@ Output:
 
 13.	Start and enter the startbox:200 container and remove the 100mb file made in the previous steps. This should result in a reduction in image size, but doesn’t. Why?  
     `docker run -it --name 200mb startbox:200 /bin/ash`  
-Remove the file and exit:  
+    Remove the file and exit:  
     `rm 100mb_file`  
     `exit`  
 
 14.	Inspect the changes made to the container. Note the deleted 100MB file.  
     `docker diff 200mb`  
-Output:
+    Output:
     ```
     D /100mb_file
     C /root
