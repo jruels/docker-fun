@@ -1,8 +1,8 @@
 # Introduction to Docker 
 
 ## lab VMs
-The instructor will provide lab environment information.
-
+[Windows VMs](VM_access.md)  
+[Docker VM IPs](https://docs.google.com/spreadsheets/d/1H3t6jZNpFFLukOuPm3rkKTMVJIX5ozDxzOiBVTd6F0M/edit?usp=sharing)   
 ## Labs
 To access the lab server please follow the [Setup Guide](labs/setup/)
 
