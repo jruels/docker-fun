@@ -17,7 +17,7 @@
 | Purvaj Motiwala               | WSAUTO25-15  | TEKwsauto25!             |                              |
 | Devanshu Mukherjee            | WSAUTO25-16  | TEKwsauto25!             |                              |
 | Salman Nawaz                  | WSAUTO25-17  | TEKwsauto25!             |                              |
-| Sarah Oduro                   | WSAUTO25-18  | TEKwsauto25!             |                              |
+| Amit Aneja                    | WSAUTO25-18  | TEKwsauto25!             |                              |
 | Hiren Patel                   | WSAUTO25-19  | TEKwsauto25!             |                              |
 | Pankaj Kumar Rai              | WSAUTO25-20  | TEKwsauto25!             |                              |
 | Carson Rivera                 | WSAUTO25-21  | TEKwsauto25!             |                              |
