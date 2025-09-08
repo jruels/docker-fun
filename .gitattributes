@@ -1,0 +1,2 @@
+# Add this to force Unix line endings for .pem
+*.pem text eol=lf
