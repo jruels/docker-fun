@@ -1,7 +1,8 @@
 # Introduction to Docker 
 
 ## lab VMs
-[Windows VMs](VM_access.md)  
+[Group A Windows VMs](VM_Group_A.md)  
+[Group B Windows VMs](VM_Group_B.md)   
 [Docker VM IPs](https://docs.google.com/spreadsheets/d/1H3t6jZNpFFLukOuPm3rkKTMVJIX5ozDxzOiBVTd6F0M/edit?usp=sharing)   
 
 ## Slides 
