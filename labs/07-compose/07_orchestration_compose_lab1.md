@@ -106,7 +106,7 @@ in the web browser.
 This will only stop the containers from running, it will not remove them. Enter the following to validate they are still on the machine:  
 `docker ps -a`
 
-9. 	Eedit the `docker-compose.yml` file so that WordPress is exposed on port 8082 of the host. After making your edits, restart the application in detached mode and confirm the change using a web browser. 
+9. 	Edit the `docker-compose.yml` file so that WordPress is exposed on port 8082 of the host. After making your edits, restart the application in detached mode and confirm the change using a web browser. 
 
 10.	List the available Docker networks, and identify the network being used by the WordPress application. Can you explain the derivation of the name of this network?
 
