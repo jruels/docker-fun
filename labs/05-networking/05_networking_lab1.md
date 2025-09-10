@@ -14,18 +14,7 @@ Lab Structure - Overview
 6.	Open Container Network
 
 ### 1. Isolated Container Network
-Step by Step Guide
-1.	Locate the IP address of the Master machine from lab folder.
-
-2.	If on a Mac, or using Linux:  
-In a command line, enter  
-`ssh -i </Users/…/>docker.pem ubuntu@<IP>`  
-The .pem file will be provided by the instructor for this lab. This command will connect the console to the Docker machine.  
-
-*If using Windows: Open Putty and connect to the session you saved earlier.*
- 
-
-3.	Run the following command to create a container using the the none network, this container will automatically delete itself after it outputs the Ethernet configurations.  
+1.	Run the following command to create a container using the the none network, this container will automatically delete itself after it outputs the Ethernet configurations.  
 `docker run --rm --net none alpine:latest ip addr`  
 The output should look like the following:  
     ```
@@ -38,7 +27,7 @@ The output should look like the following:
     ```
     Take note that the above container has no eth0; proceed to the next step and try to ping a public IP address.
 
-4.	Run the following command to create a container using the none network, this container will automatically delete itself after attempting to ping the Internet address 8.8.4.4 twice.  
+2.	Run the following command to create a container using the none network, this container will automatically delete itself after attempting to ping the Internet address 8.8.4.4 twice.  
     `docker run --rm --net none alpine:latest ping -w 2 8.8.4.4`  
 The output should look like the following:
     ```
