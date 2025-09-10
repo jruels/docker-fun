@@ -7,6 +7,7 @@
 
 ## Slides 
 [Day 1](slides/Docker-day1.pdf)   
+[Day 2](slides/Docker-day2.pdf)   
 
 ## Labs
 To access the lab server please follow the [Setup Guide](labs/setup/)
