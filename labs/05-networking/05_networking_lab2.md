@@ -1,4 +1,4 @@
-#LAB
+# LAB
 ## Networking Part 2
 *Lab Objectives*  
 This lab demonstrates how to create and configure Docker bridge networks.  
