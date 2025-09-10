@@ -9,15 +9,13 @@ Lab Structure - Overview
  
 
 ### 1. Compose Hello-World
-1.	Run the following:  
-Download the lab files   
-`wget https://bit.ly/comp-files -O docker-compose.zip`  
-Extract the lab files   
-`sudo apt-get update && sudo apt-get install -y unzip`  
-`unzip docker-compose.zip`   
+1.	Enter the compose lab directory: 
+`cd $HOME/docker-fun/labs/07-compose/compose`
+
 List files in the compose directory  
-`cd compose`  
+
 `ls`  
+
 The following items will be present:    
     ```
     example1  example2  example3
