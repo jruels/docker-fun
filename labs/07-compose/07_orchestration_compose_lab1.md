@@ -9,18 +9,7 @@ Lab Structure - Overview
  
 
 ### 1. Compose Hello-World
-Step by Step Guide
-1.	Locate the IP address of the Master machine in the lab folder.
-
-2.	If on a Mac, or using Linux:  
-In a command line, enter  
-`ssh -i </Users/…/>docker.pem root@<IP>`
-The .pem file will be provided by the instructor for this lab. This command will connect the console to the Docker machine.
-
-*If using Windows: Open Putty and connect to the session you saved earlier.* 
- 
-
-3.	Log into the Docker host and run the following:  
+1.	Run the following:  
 Download the lab files   
 `wget https://bit.ly/comp-files -O docker-compose.zip`  
 Extract the lab files   
@@ -34,12 +23,11 @@ The following items will be present:
     example1  example2  example3
     ```
 
-4.	Enter the example1 folder and list the contents. There will be a single docker-compose.yml file inside.  
+2.	Enter the example1 folder and list the contents. There will be a single docker-compose.yml file inside.  
 `cd ./example1`  
 `ls`
 
-5.	Inspect the file docker-compose.yml:  
-`vim docker-compose.yml`  
+3.	Inspect the file `docker-compose.yml` in VS Code:  
 The file is populated as follows:  
     ```
     version: '2.2'
@@ -49,10 +37,8 @@ The file is populated as follows:
       hello-world:
         image: hello-world
     ```
-    To exit vim, press the esc key and enter  
-    `:q!`
 
-6.	Use the docker compose up command with a detach flag to run a hello-world container in the background.  
+4.	Use the docker compose up command with a detach flag to run a hello-world container in the background.  
 `docker compose up -d`  
 The output will show the hello-world container being created:  
     ```
@@ -60,7 +46,7 @@ The output will show the hello-world container being created:
     Creating example1_hello-world_1...done
     ```
 
-7.	Issue the next command to see the running containers.  
+5.	Issue the next command to see the running containers.  
 `docker ps`  
 The hello-world container should not be listed. This is because it exits upon successfully running. It can be listed by passing the "all" flag.  
 `docker ps -a`
@@ -68,15 +54,15 @@ The hello-world container should not be listed. This is because it exits upon su
   You can also use `docker compose` to interact with containers that are defined in the compose YAML file.  
   List containers: `docker compose ps`  
 
-8.	The following command will show the logs that Docker recorded for the hello-world container.   
+6.	The following command will show the logs that Docker recorded for the hello-world container.   
 `docker compose logs hello-world`
 
-9.	Enter the following command to remove the container:  
+7.	Enter the following command to remove the container:  
 `docker compose down`
 
-10.	Now, use docker compose to re-run hello-world in the foreground. Compare the output you see with the logs that Docker recorded for the hello-world container.
+8.	Now, use docker compose to re-run hello-world in the foreground. Compare the output you see with the logs that Docker recorded for the hello-world container.
 
-11.	Use the docker compose down command to clean up the environment
+9.	Use the docker compose down command to clean up the environment
 
 	
 ### 2. Install WordPress 
@@ -97,15 +83,14 @@ The output will show the WordPress container being created:
 `docker compose ps`  
 Take note of the port that is listed for the WordPress container (8080).
 
-4.	Navigate to the Master_IP.  
+4.	Navigate to the Leader_IP.  
 {% raw %}
-`http://<Master_IP>:8080`
+`http://<Leader_IP>:8080`
 {% endraw %}
 If you don't see the expected install page, review the status and the logs of the WordPress container. Is there an evident problem?  
 
-5.	Back in the console window, enter  
-`vim docker-compose.yml`
-Delete the comment marks from in front of the MySQL container by moving the cursor down and using the `x` key to delete each `#` character. After deleting the comment marks, save and exit vim via `esc` `:wq`
+5.	Back in the console window, in VS Code edit `docker-compose.yml`
+Delete the comment marks from in front of the MySQL container. Save the file
 
 6.	Enter  
 `docker compose up -d`  
@@ -115,7 +100,7 @@ The output will show the WordPress container starting up, and the new MySQL cont
     Creating example2_mysql_1
     ```
 
-7.	After a few moments, the WordPress Installer will be available at {% raw %} `http://<Master_IP>:8080` {% endraw%}
+7.	After a few moments, the WordPress Installer will be available at {% raw %} `http://<Leader_IP>:8080` {% endraw%}
 in the web browser.
 
 8.	Enter  
@@ -123,7 +108,7 @@ in the web browser.
 This will only stop the containers from running, it will not remove them. Enter the following to validate they are still on the machine:  
 `docker ps -a`
 
-9. 	Use vim to edit the docker-compose.yml file so that WordPress is exposed on port 8082 of the host. After making your edits, restart the application in detached mode and confirm the change using a web browser. 
+9. 	Eedit the `docker-compose.yml` file so that WordPress is exposed on port 8082 of the host. After making your edits, restart the application in detached mode and confirm the change using a web browser. 
 
 10.	List the available Docker networks, and identify the network being used by the WordPress application. Can you explain the derivation of the name of this network?
 
@@ -140,7 +125,6 @@ Take a few moments to answer the following questions to yourself:
 
      If you are having trouble answering these questions, ask the instructor for help.
 
- 3.  Exit vim.
 
  4.  Enter
  `docker compose up -d`
@@ -149,9 +133,9 @@ Take a few moments to answer the following questions to yourself:
  5.  Verify that the containers are running:
  `docker compose ps`
 
- 6.  Navigate to {% raw %}`http://<MASTER_IP>:8080`{% endraw %} in the web browser.
+ 6.  Navigate to {% raw %}`http://<Leader_IP>:8080`{% endraw %} in the web browser.
 
- 16. Back in the console window, stop and remove the application using docker compose. Check the list of available Docker volumes. Has the list changed?
+ 16. Back in the console window, stop and remove the application using `docker compose`. Check the list of available Docker volumes. Has the list changed?
 
  17. Use the -v flag to docker compose down to remove the volumes listed in the compose file:
  `docker compose down -v`
