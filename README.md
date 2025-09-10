@@ -20,6 +20,6 @@ Lab 6: [Optimizing Dockerfiles](labs/adv-dockerfile/)
 ### Day 2
 Lab 7: [Volumes](labs/06-volumes/)  
 Lab 8: [Compose](labs/07-compose/07_orchestration_compose_lab1.md)  
-Lab 9: [Swarm](labs/08-swarm/08_swarm_cluster_lab1.md)  
+Lab 9: [Swarm](labs/08-swarm/index.md)  
 Lab 10: [Capstone](labs/09-capstone/capstone.md)  
 
