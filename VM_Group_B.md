@@ -1,27 +1,28 @@
-| Name                                   | Username     | Virtual Machine Password | Virtual Machine Portal                      |
-|:---------------------------------------|:-------------|:-------------------------|:--------------------------------------------|
-| Gregory Dobson                         | WSAUTO25-31  | tekWSAUTO25!             | [Ablaze Portal](https://my.ablazedesktop.com) |
-| Supriya Dodda                          | WSAUTO25-32  | tekWSAUTO25!             |                                            |
-| Kashinath Gande                        | WSAUTO25-33  | tekWSAUTO25!             |                                            |
-| Steven Han                             | WSAUTO25-34  | tekWSAUTO25!             |                                            |
-| Michael Hasslinger                     | WSAUTO25-35  | tekWSAUTO25!             |                                            |
-| Sakshi Kalra                           | WSAUTO25-36  | tekWSAUTO25!             |                                            |
-| Balkrishna Kamat                       | WSAUTO25-37  | tekWSAUTO25!             |                                            |
-| Srinivas Kotha                         | WSAUTO25-38  | tekWSAUTO25!             |                                            |
-| Kanaka Subramaniam Kunjithapatham      | WSAUTO25-39  | tekWSAUTO25!             |                                            |
-| Michael Martin                         | WSAUTO25-40  | tekWSAUTO25!             |                                            |
-| Joel Mathai                            | WSAUTO25-41  | tekWSAUTO25!             |                                            |
-| Joseph Anil Mendemu                    | WSAUTO25-42  | tekWSAUTO25!             |                                            |
-| Purvaj Motiwala                        | WSAUTO25-43  | tekWSAUTO25!             |                                            |
-| Alicia Murillo                         | WSAUTO25-44  | tekWSAUTO25!             |                                            |
-| Manish Nigam                           | WSAUTO25-45  | tekWSAUTO25!             |                                            |
-| Sanjeev Pal                            | WSAUTO25-46  | tekWSAUTO25!             |                                            |
-| Venugopal Patlori                      | WSAUTO25-47  | tekWSAUTO25!             |                                            |
-| Manivannan Perumalswami                | WSAUTO25-48  | tekWSAUTO25!             |                                            |
-| Deepak Saxena                          | WSAUTO25-49  | tekWSAUTO25!             |                                            |
-| Siry Siu                               | WSAUTO25-50  | tekWSAUTO25!             |                                            |
-| Smitty Smith                           | WSAUTO25-51  | tekWSAUTO25!             |                                            |
-| Vijayakala Subbaian                    | WSAUTO25-52  | tekWSAUTO25!             |                                            |
-| Usha Jayanthi Vangipuram               | WSAUTO25-53  | tekWSAUTO25!             |                                            |
-| Sudhir Vinjamur                        | WSAUTO25-54  | tekWSAUTO25!             |                                            |
-| Belwin Samuel Winston Melchizedec      | WSAUTO25-55  | tekWSAUTO25!             |                                            |
+| Name       | Username     | Virtual Machine Password | Virtual Machine Portal                      |
+|:-----------|:-------------|:-------------------------|:--------------------------------------------|
+| Student1   | WSAUTO25-91  | TEKwsauto25!             | [Ablaze Portal](https://my.ablazedesktop.com) |
+| Student2   | WSAUTO25-92  | TEKwsauto25!             |                                            |
+| Student3   | WSAUTO25-93  | TEKwsauto25!             |                                            |
+| Student4   | WSAUTO25-94  | TEKwsauto25!             |                                            |
+| Student5   | WSAUTO25-95  | TEKwsauto25!             |                                            |
+| Student6   | WSAUTO25-96  | TEKwsauto25!             |                                            |
+| Student7   | WSAUTO25-97  | TEKwsauto25!             |                                            |
+| Student8   | WSAUTO25-98  | TEKwsauto25!             |                                            |
+| Student9   | WSAUTO25-99  | TEKwsauto25!             |                                            |
+| Student10  | WSAUTO25-100 | TEKwsauto25!             |                                            |
+| Student11  | WSAUTO25-101 | TEKwsauto25!             |                                            |
+| Student12  | WSAUTO25-102 | TEKwsauto25!             |                                            |
+| Student13  | WSAUTO25-103 | TEKwsauto25!             |                                            |
+| Student14  | WSAUTO25-104 | TEKwsauto25!             |                                            |
+| Student15  | WSAUTO25-105 | TEKwsauto25!             |                                            |
+| Student16  | WSAUTO25-106 | TEKwsauto25!             |                                            |
+| Student17  | WSAUTO25-107 | TEKwsauto25!             |                                            |
+| Student18  | WSAUTO25-108 | TEKwsauto25!             |                                            |
+| Student19  | WSAUTO25-109 | TEKwsauto25!             |                                            |
+| Student20  | WSAUTO25-110 | TEKwsauto25!             |                                            |
+| Student21  | WSAUTO25-111 | TEKwsauto25!             |                                            |
+| Student22  | WSAUTO25-112 | TEKwsauto25!             |                                            |
+| Student23  | WSAUTO25-113 | TEKwsauto25!             |                                            |
+| Student24  | WSAUTO25-114 | TEKwsauto25!             |                                            |
+| Student25  | WSAUTO25-115 | TEKwsauto25!             |                                            |
+| Instructor | WSAUTO25-116 | TEKwsauto25!             |                                            |
